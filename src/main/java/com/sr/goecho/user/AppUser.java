@@ -1,12 +1,12 @@
 package com.sr.goecho.user;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
+//
+//@Entity
 public class AppUser {
 	
-	@Id
+	//@Id
 	private String username;
 	private String firstname;
 	private String lastname;
