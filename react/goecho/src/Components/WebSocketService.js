@@ -9,7 +9,7 @@ constructor()
 
 }
     connect(onConnect,onError) {
-        var socket = new SockJS('http://localhost:8080/GoEcho-Live');
+        var socket = new SockJS('https://goecho-webservice.onrender.com/GoEcho-Live');
          this.stompClient = Stomp.over(socket);
         const accessToken = localStorage.getItem('jwtToken');
         
