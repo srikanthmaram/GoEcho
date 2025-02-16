@@ -1,0 +1,30 @@
+# Step 1: Use Maven image to build the application
+FROM maven:3.8.8-eclipse-temurin-17 AS builder
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the pom.xml file and download dependencies
+COPY pom.xml .
+RUN mvn dependency:go-offline
+
+# Copy the application source code into the container
+COPY src ./src
+
+# Build the application (creates a JAR file in the /app/target directory)
+RUN mvn clean package -DskipTests
+
+# Step 2: Use OpenJDK image to run the application
+FROM eclipse-temurin:17-jdk
+
+# Set the working directory
+WORKDIR /root
+
+# Copy the JAR file from the builder stage
+COPY --from=builder /app/target/*.jar app.jar
+
+# Expose the port the app runs on
+EXPOSE 8080
+
+# Run the application
+CMD ["java", "-jar", "app.jar"]
