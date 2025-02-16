@@ -1,0 +1,51 @@
+.signin-container
+{
+    
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.sigin-card
+{
+ background-color: #30305b;
+ 
+ width: 25%;
+ height: 25rem;
+ margin-top: 3%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ 
+ border-radius: 10px;
+ color: white;
+ border: .1px solid #585f78;
+ opacity: 0.8;
+}
+.sigin-card input
+{
+   border: none;
+   width: 60%;
+   height: 2rem;
+   border-radius: 5px;
+   border:2px solid black;
+   background-color: transparent;
+   color: white;
+   margin: 2rem;
+}
+
+.sigin-card button
+{
+height: 2rem;
+width: 60%;
+border-radius: 6px;
+border: none;
+background-color: #6969bd;
+color: white;
+}
+.sigin-card button:hover
+{
+background-color: blue;
+}

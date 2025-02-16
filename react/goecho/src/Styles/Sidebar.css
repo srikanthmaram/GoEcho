@@ -1,0 +1,154 @@
+.Sidebar-container{
+    
+    /* min-width: 22rem; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+ 
+    height: 100vh;
+}
+.Sidebar-container img
+{
+    /* width: 8rem; */
+    width: 36%;
+    
+}
+.App-header
+{
+    background-color: #12192d;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.searhbar
+{
+
+flex-grow: 1;
+height: 85%;
+text-align: center;
+
+}
+.App-header input
+{
+    border: 1px solid #382724;
+    border-radius: 10px; 
+ min-width: 0;
+ height: 100%;
+ background-color: #0a1124;
+ color: white;
+ opacity: 0.5;
+ outline: none;
+ text-align: center;
+}
+input::placeholder {
+    color: #888888; 
+    
+   
+  }
+.Mainbar
+{
+    flex-grow: 1;
+    background-color: #32394d;
+    display: flex;
+    overflow-y: auto;
+   
+}
+.minisidebar
+{
+    background-color: #0a1124;
+    width: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    
+}
+.minisidebar img 
+{
+  width: 60%;
+  
+}
+.Connectedusers
+{
+display: flex;
+flex-direction: column;
+color: white;
+flex-grow: 1;
+overflow-y: auto;
+}
+
+.app-community
+{
+    border-bottom: 0.5px solid rgba(224, 219, 219, 0.1);
+    display: flex;
+    
+    align-items: center;
+    height: 9%;
+}
+.app-community img
+{
+    
+    
+margin-inline-start: 5%;
+ width: 12%;
+ height: 70%;
+ opacity: 0.5;
+}
+.app-community p
+{
+    
+    font-weight: 400; 
+    margin-inline-start: 5%;
+    opacity: 0.5;
+}
+.active
+{
+    background-color: #12192d;
+}
+.usercontainer
+{
+    font-weight: 300; 
+    opacity: 0.5;
+        display: flex;
+    align-items: center;
+    height: 9%;
+    border-bottom: 0.5px solid rgba(224, 219, 219, 0.1);
+}
+.usercontainer img
+{
+    
+    margin-inline-start: 5%;
+   width: 10%;
+    height: 55%;
+}
+.usercontainer p{
+    font-weight: 400; 
+    margin-inline-start: 5%;
+}
+.usercontainer span{
+    color: rgb(100, 228, 100);
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+.Connectedusers::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+.Connectedusers::-webkit-scrollbar-track {
+    background: #12192d; 
+    border-radius: 10px;
+}
+
+.Connectedusers::-webkit-scrollbar-thumb {
+    background: #0a1124;
+    border-radius: 10px; 
+    
+}
+
+.Connectedusers::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

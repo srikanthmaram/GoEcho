@@ -1,0 +1,104 @@
+.Home-container
+{
+    display: flex;
+    margin: 0 auto; 
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #f5f5f5; 
+    flex-direction: column;
+    background-color: black;
+    position: relative; 
+    overflow: hidden; 
+}
+.graphic-circle-1
+{
+   
+    position: absolute;
+    width: 130px;
+    height: 250px;
+    top: -70px;
+    right: 20px;
+    transform: rotate(45deg);
+    background-color: #30305b;
+    opacity: 0.3;
+    border: 2px solid rgb(107, 107, 190);
+    box-sizing: border-box;
+    pointer-events: none;
+   
+    
+   
+}
+.graphic-circle-5
+{
+   position:absolute;
+  
+   width: 465px;
+   height: 465px;
+   border-radius: 50%;
+   bottom: -290px;
+   left: -290px;
+   background-color: #30305b;
+   opacity: 0.3;
+   border: 2px solid rgb(107, 107, 190);
+   box-sizing: border-box;
+   pointer-events: none;
+ 
+   
+   
+}
+.Home-card
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.punch
+{
+    background-color: #5a5ab2;
+  
+    width: 15%;
+    height: 26px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    /* background-image: radial-gradient(#30305b,white); */
+}
+.Home-card img
+{
+    margin-top: 2%;
+  width: 20%;
+}
+.Home-card p{
+    font-size: x-large;
+    width: 60%;
+}
+.Home-card button
+{
+    width: 15%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #5a5ab2;
+    color: white;
+}
+.even-columns
+{
+    margin-top: 2%;
+    display: flex;
+    width: 60%;
+    
+    justify-content: space-between;
+    padding: 5px;
+}
+.card
+{
+    width: 40%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #161316;
+}
