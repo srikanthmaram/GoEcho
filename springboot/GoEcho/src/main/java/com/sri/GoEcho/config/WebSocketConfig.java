@@ -48,8 +48,8 @@ private MyUserDetailsService myUserDetailsService;
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/GoEcho-Live").setAllowedOrigins("http://localhost:3001","http://localhost:3000");
-        registry.addEndpoint("/GoEcho-Live").setAllowedOrigins("http://localhost:3001","http://localhost:3000").withSockJS();
+        registry.addEndpoint("/GoEcho-Live").setAllowedOrigins("http://localhost:3001","http://localhost:3000","https://goecho.onrender.com");
+        registry.addEndpoint("/GoEcho-Live").setAllowedOrigins("http://localhost:3001","http://localhost:3000","https://goecho.onrender.com").withSockJS();
     }
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {

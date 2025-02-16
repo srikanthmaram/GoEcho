@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://127.0.0.1:5500","http://localhost:3000","http://localhost:3001")  // Specify your client origin here
+                .allowedOrigins("http://127.0.0.1:5500","http://localhost:3000","http://localhost:3001","https://goecho.onrender.com")  // Specify your client origin here
                 .allowedMethods("GET", "POST", "PUT", "DELETE","OPTIONS")
                 .allowedHeaders("*");
 
