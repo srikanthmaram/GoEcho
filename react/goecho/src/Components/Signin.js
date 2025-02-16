@@ -21,7 +21,7 @@ const handleLogin=async (e)=>{
         const jwtToken=respons.data
         localStorage.setItem('jwtToken',jwtToken)
         localStorage.setItem('user',Username)
-
+console.log("jwt is fetched")
         //creating a websocket connection
         webSocketService.connect(
             function onConnect(){
