@@ -3,6 +3,8 @@ import '../Styles/Signin.css'
 import axiosInstance from './AxiosAPI';
 import webSocketService from './WebSocketService';
 import { useNavigate } from 'react-router-dom';
+const API_URL = process.env.REACT_APP_API_URL;
+
 
 export default function Signin() {
 
@@ -12,6 +14,7 @@ export default function Signin() {
 
 const handleLogin=async (e)=>{
     e.preventDefault(); 
+    console.log(API_URL)
     try{
     const respons=await axiosInstance.post('/login',{ "appUserEmail":Username,"appUserPassword":Password,"status":"ONLINE"});
 
@@ -21,7 +24,7 @@ const handleLogin=async (e)=>{
         const jwtToken=respons.data
         localStorage.setItem('jwtToken',jwtToken)
         localStorage.setItem('user',Username)
-console.log("jwt is fetched")
+
         //creating a websocket connection
         webSocketService.connect(
             function onConnect(){

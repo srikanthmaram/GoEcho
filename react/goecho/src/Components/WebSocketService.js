@@ -1,5 +1,6 @@
 import { Stomp } from "@stomp/stompjs";
 import SockJS from "sockjs-client";
+const API_URL = process.env.REACT_APP_API_URL;
 
 class WebSocketService {
     
@@ -9,7 +10,7 @@ constructor()
 
 }
     connect(onConnect,onError) {
-        var socket = new SockJS('https://goecho-webservice.onrender.com/GoEcho-Live');
+        var socket = new SockJS(`${API_URL}/GoEcho-Live`);
          this.stompClient = Stomp.over(socket);
         const accessToken = localStorage.getItem('jwtToken');
         
