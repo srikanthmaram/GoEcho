@@ -9,15 +9,18 @@
     background-color: black;
     position: relative; 
     overflow: hidden; 
+    
 }
 .graphic-circle-1
 {
    
     position: absolute;
-    width: 130px;
-    height: 250px;
-    top: -70px;
-    right: 20px;
+    
+    width: 8.125rem;
+    
+    height: 15.625rem;
+    top: -5.375rem;
+    right: -0.75rem;
     transform: rotate(45deg);
     background-color: #30305b;
     opacity: 0.3;
@@ -32,11 +35,11 @@
 {
    position:absolute;
   
-   width: 465px;
-   height: 465px;
+   width: 29.063rem;
+   height: 29.063rem;
    border-radius: 50%;
-   bottom: -290px;
-   left: -290px;
+   bottom: -18.125rem;
+   left: -18.125rem;
    background-color: #30305b;
    opacity: 0.3;
    border: 2px solid rgb(107, 107, 190);
@@ -52,14 +55,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
+    flex-grow: 1;
+    
 }
 .punch
 {
     background-color: #5a5ab2;
-  
+    
     width: 15%;
-    height: 26px;
+    height: 1.625rem;
     border-radius: 20px;
     margin: 0;
     padding: 0;
@@ -67,6 +72,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0.8;
+    margin-top: 2%;
     /* background-image: radial-gradient(#30305b,white); */
 }
 .Home-card img
@@ -75,14 +81,16 @@
   width: 20%;
 }
 .Home-card p{
-    font-size: x-large;
+    margin-top: 2%;
+    font-size:large;
     width: 60%;
 }
-.Home-card button
+.getstarted
 {
+    margin-top: 2%;
     width: 15%;
-    height: 40px;
-    border-radius: 10px;
+    height: 2.5rem;
+    border-radius: 0.625rem;
     background-color: #5a5ab2;
     color: white;
 }
@@ -98,7 +106,77 @@
 .card
 {
     width: 40%;
-    height: 180px;
-    border-radius: 10px;
+    height: 11.25rem;
+    border-radius: 0.625rem;
     background-color: #161316;
+}
+
+.MobileSignButton{
+    display: none;
+}
+
+@media (max-width: 480px) {
+.graphic-circle-1
+{
+    top: -6.375rem;
+    right: -1.75rem;
+}
+.graphic-circle-5
+{
+    bottom: -20.125rem;
+    left: -18.125rem;
+}
+.punch
+{
+    margin-top: 5%;
+    width: 40%;
+}
+.Home-card img
+{
+    margin-top: 5%;
+  width: 40%;
+}
+.Home-card p{
+    margin-top: 5%;
+    font-size:smaller;
+    width: 80%;
+}
+.getstarted
+{
+    margin-top: 5%;
+    width: 45%;
+    height: 2.5rem;
+}
+.even-columns
+{display: none;}
+
+.MobileSignButton
+{
+   
+   height: 50%;
+   width: 80%;
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+}
+.MobileSignButton button
+{
+    width: 75%;
+    height: 5rem;
+    border-radius: 1rem;
+    border: 0.1px solid rgb(245, 243, 243);
+    background-color: black;
+    color: white;
+    margin: 3rem;
+}
+.MobileSignButton button:hover {
+    background-color: white;
+    color: black;
+}
+
+.MobileSignButton .active {
+    background-color: white;
+    color: black;
+}
+
 }

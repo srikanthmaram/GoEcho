@@ -48,7 +48,7 @@ export default function Sidebar({onSelectUser}) {
 
 
     return <>
-        <div className="Sidebar-container">
+        <div className={`Sidebar-container ${ ActiveUser ? "hide":""}`}>
             <div className="App-header">
                 <img src={goecho_logo} alt='logo' />
                 <div className="searhbar">

@@ -53,7 +53,7 @@ export default function Chatbox({ selectedUser }) {
         };
 
         return <>
-                <div className="Chatbox-container">
+                <div className={`Chatbox-container ${selectedUser ? "":"hide"}`}>
                         {selectedUser == null && (<>
                                 <div className="Messae-container">
                                         <div className="mymessages">

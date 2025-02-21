@@ -43,7 +43,7 @@ private ActiveAppUsers activeAppUsers;
     @PostMapping("/login")
     public ResponseEntity<?> loginAppUser(@RequestBody AppUser appUser)
     {
-
+        System.out.println("login requested....");
 
         return appUserService.verifyUser(appUser);
     }
@@ -52,6 +52,12 @@ private ActiveAppUsers activeAppUsers;
     {
 return appUserService.saveAppUser(appUser);
     }
+    @GetMapping("/test")
+    public String temp()
+    {
+        return "heloo test connection successfullll";
+    }
+
 
 
 }

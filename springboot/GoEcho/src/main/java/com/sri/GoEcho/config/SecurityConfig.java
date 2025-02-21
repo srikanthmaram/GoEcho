@@ -30,11 +30,12 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+
 http.cors(Customizer.withDefaults());
         http.csrf(customizer->customizer.disable());
         http.sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.authorizeHttpRequests(request->request
-                .requestMatchers("/login","/register","/GoEcho-Live/**","/stompclient.html").permitAll()
+                .requestMatchers("/test","/login","/register","/GoEcho-Live/**","/stompclient.html").permitAll()
                 .anyRequest().authenticated());
 
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);

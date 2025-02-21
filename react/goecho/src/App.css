@@ -3,3 +3,59 @@
     font-family: 'Roboto', sans-serif;
     
 }
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Monda', sans-serif;
+   
+}
+
+:root {
+  --base-font-size: 16px;
+
+  font-size: var(--base-font-size); 
+}
+
+@media (max-width: 768px) {
+  :root {
+      --base-font-size: 14px;
+      font-size: var(--base-font-size);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+      --base-font-size: 12px;
+      font-size: var(--base-font-size);
+  }
+}
+
+
+
+:root
+{
+  --font-size-h1:2rem;
+  --font-size-h2:1.625rem;
+  --font-size-h3:1.375rem;
+  --font-size-h4:1.125rem;
+  --font-size-small:0.875rem;
+}
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3{
+  font-size: var(--font-size-h3);
+}
+h4{
+  font-size: var(--font-size-h4);
+}
+p{
+    font-size: var(--base-font-size);
+}

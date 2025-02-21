@@ -6,6 +6,7 @@ import { useState } from 'react';
 export default function  Echochat()
 {
     const [selectedUser,setSelectedUser]=useState(null);
+    
     function handleSelectedUser(username)
   {
     setSelectedUser(username);
@@ -14,8 +15,12 @@ export default function  Echochat()
   }
     return<>
     <div className="Echo-container">
-    <Sidebar onSelectUser={handleSelectedUser}/>
+      
+      <Sidebar onSelectUser={handleSelectedUser}/>
+      
+      
     <Chatbox selectedUser={selectedUser}/>
+    
     </div>
     </>
 }
